@@ -1,38 +1,107 @@
-html {
-  box-sizing: border-box;
+.site-footer {
+  background-color: var(--color-33323d);
+  padding: 24px 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
+.footer__row {
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #fff;
-  font-family: sans-serif;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.footer__logo {
+  width: 60px;
+  height: 32px;
 }
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
+.footer-nav__list {
+  margin: 0;
+  margin-left: 50px;
+}
+
+.footer-nav__item:not(:first-child) {
+  margin-left: 42px;
+}
+
+.footer-nav__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-ffffff);
+  transition: color 0.4s ease;
+}
+
+.footer-nav__link:hover {
+  color: var(--color-5fb4a2);
+}
+
+.footer-nav__link:active {
+  opacity: 0.6;
+}
+
+.footer-social__list {
+  margin: 0;
   margin-left: auto;
-  margin-right: auto;
+}
+
+.footer-social__item:not(:first-child) {
+  margin-left: 16px;
+}
+
+.footer-social__link {
+  color: var(--color-ffffff);
+  font-size: 24px;
+  transition: color 0.4s ease;
+}
+
+.footer-social__link:hover {
+  color: var(--color-5fb4a2);
 }
 
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 1140px;
+.footer-social__link:active {
+  opacity: 0.6;
+}
+
+
+@media screen and (max-width: 648px) {
+  .site-footer {
+    padding: 56px 0;
+  }
+  .footer__logo {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .footer-nav__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+  .footer-nav__item {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .footer-nav__item:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .footer-nav__item:last-child {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .footer-nav__link {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .footer-social__list {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
