@@ -428,7 +428,7 @@ textarea::placeholder{
     position: absolute;
     top: 80px;
     right: 30px;
-    z-index: 999;
+    z-index: 989;
   }
   .open .nav__link{
     color: var(--color-ffffff);
