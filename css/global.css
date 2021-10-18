@@ -1,0 +1,235 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --color-5fb4a2 : #5fb4a2;
+  --color-56a292 : #56a292;
+  --color-203a4c : #203a4c;
+  --color-33323d : #33323d;
+  --color-fafafa : #fafafa;
+  --color-eaeaeb : #eaeaeb;
+  --color-ececed : #ececed;
+  --color-f43030 : #f43030;
+  --color-1d3445 : #1d3445;
+  --color-f2f2f2 : #807373;
+  --color-d2d8db : #d2d8db;
+  --color-d2d6da : #d2d6da;
+  --color-ffffff : #fff;
+  --font-ibarra: 'Ibarra Real Nova', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-f2f2f2);
+  font-family: 'Public Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+h1{
+  font-family: var(--font-ibarra);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.446429px;
+  color: var(--color-33323d);
+}
+
+h2{
+  font-family: var(--font-ibarra);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--color-33323d);
+}
+
+h3{
+  font-family: var(--font-ibarra);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.285714px;
+  color: var(--color-33323d);
+}
+
+.text-big{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-33323d);
+}
+
+.text-small{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--color-33323d);
+}
+
+.btn-full{
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 48px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-ffffff);
+  padding: 17px 0;
+  padding-left: 48px;
+  background-color: var(--color-203a4c);
+  transition: all 0.4s ease;
+}
+.btn-full::before{
+  content: "";
+  position: absolute;
+  background-image: url("../img/down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 14px;
+  background-color: var(--color-1d3445);
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+.btn-full:hover{
+  background-color: var(--color-5fb4a2);
+}
+
+.btn-full:hover::before{
+  background-color: var(--color-56a292);
+}
+
+.btn-full:active{
+  background-color: var(--color-d2d8db);
+}
+
+.btn-full:active::before{
+  background-color: var(--color-d2d6da);
+}
+
+.btn{
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-33323d);
+  padding: 17px 32px;
+  border: 1px solid var(--color-33323d);
+  background-color: transparent;
+  transition: all 0.4s ease;
+}
+
+.btn:hover{
+  background-color: var(--color-33323d);
+  color: var(--color-fafafa);
+}
+
+.btn:active{
+  opacity: 0.2;
+  background-color: transparent;
+  color: var(--color-33323d);
+}
+
+input{
+  background: #33323d3b;
+  padding: 9px 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-33323d);
+  border: 1px solid transparent;
+}
+
+input:focus{
+  background: var(--color-ececed);
+  border-color: var(--color-5fb4a2);
+  opacity: 1;
+  outline: none;
+}
+
+input::placeholder{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-33323d);
+  opacity: 0.6;
+}
+
+textarea{
+  background: #33323d3b;
+  padding: 9px 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-33323d);
+  border: 1px solid transparent;
+}
+
+textarea:focus{
+  background: var(--color-ececed);
+  border-color: var(--color-5fb4a2);
+  opacity: 1;
+  outline: none;
+}
+
+textarea::placeholder{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-33323d);
+  opacity: 0.6;
+}
