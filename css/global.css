@@ -21,6 +21,7 @@ html {
   --color-f43030 : #f43030;
   --color-1d3445 : #1d3445;
   --color-f2f2f2 : #f2f2f2;
+  --color-fafafa : #fafafa;
   --color-807373 : #807373;
   --color-d2d8db : #d2d8db;
   --color-d2d6da : #d2d6da;
@@ -35,7 +36,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  background-color: var(--color-f2f2f2);
+  background-color: var(--color-fafafa);
   font-family: 'Public Sans', sans-serif;
 }
 
@@ -132,6 +133,8 @@ h3{
 .btn-full::before{
   content: "";
   position: absolute;
+  width: 48px;
+  height: 48px;
   background-image: url("../img/down.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -348,6 +351,59 @@ textarea::placeholder{
 
 .footer-social__link:active {
   opacity: 0.6;
+}
+
+.intres__title{
+  width: 350px;
+  position: relative;
+}
+.intres::after{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #33333357;
+  top: 50%;
+  left: calc(50% - 190px);
+}
+.intres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px 0;
+  position: relative;
+}
+
+@media screen and (max-width:1100px) {
+  .intres::after{
+    width: 40%;
+    left: calc(50% - 120px);
+  }
+}
+@media screen and (max-width:996px) {
+  .intres::after{
+    width: 30%;
+    left: calc(50% - 50px);
+  }
+}
+@media screen and (max-width:810px) {
+  .intres::after{
+    width: 20%;
+    left: 50%;
+  }
+}
+@media screen and (max-width:768px) {
+  .intres{
+    flex-direction: column;
+  }
+  .intres::after{
+    display: none;
+  }
+  .intres__title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
 }
 
 
