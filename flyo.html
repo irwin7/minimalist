@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/flexboxgrid.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="hero">
+          <header class="site__header site-header">
+            <a class="site-header__logo-link" href="index.html">
+              <img class="site-header__logo" src="img/logo-dark.svg" alt="logo">
+            </a>
+            <nav class="site-header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">HOME</a></li>
+                <li class="nav__item active"><a class="nav__link" href="portfolio.html">PORTFOLIO</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">CONTACT ME</a></li>
+              </ul>
+            </nav>
+            <button class="site-header__btn__menu"></i></button>
+          </header>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__container container">
+        <img class="portfolio__big-img" src="img/port4-1.png" alt="portfolio">
+        <div class="portfolio__row row between-xs">
+          <div class="portfolio__col col-xs-12 col-md-5">
+            <div class="portfolio__inner">
+              <h2 class="portfolio__title">Manage</h2>
+              <p class="portfolio__text text-small">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+              <p class="portfolio__text-yellow">Interaction Design / Front End Development</p>
+              <p class="portfolio__text-yellow-two">HTML / CSS / JS</p>
+              <a class="portfolio__btn btn" href="#">VISIT WEBSITE</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="portfolio__left">
+              <h2 class="portfolio__small-title">Project Background</h2>
+              <p class="portfolio__small-text text-small">This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.</p>
+              <h2 class="portfolio__small-title">Static Previews</h2>
+              <img class="portfolio__small-img" src="img/port4-2.png" alt="portfolio">
+              <img src="img/port4-3.png" alt="portfolio">
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__slide slide row row-mrg between-xs">
+          <div class="slide__left">
+            <a class="slide__left-link" href="insure.html">
+              <h3 class="slide__title">Insure</h3>
+              <p class="slide__text text-big">Previous Project</p>
+            </a>
+          </div>
+          <div class="slide__right">
+            <a class="slide__right-link" href="manage.html">
+              <h3 class="slide__title">Manage</h3>
+              <p class="slide__text text-big">Next Project</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="footer">
+    <div class="footer__container container">
+      <div class="footer__row row middle-xs">
+        <a class="footer__logo" href="index.html"><img src="img/logo-light.svg" alt="logo"></a>
+        <ul class="footer-nav__list row middle-xs">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">home</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="portfolio.html">portfolio</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">contact me</a></li>
+        </ul>
+        <ul class="footer-social__list row middle-xs">
+          <li class="footer-social__item"><a class="footer-social__link" href="https://twitter.com"><i class='footer__socails bx bxl-twitter'></i></a></li>
+          <li class="footer-social__item"><a class="footer-social__link" href="https://github.com"><i class='footer__socails bx bxl-github'></i></a></li>
+          <li class="footer-social__item"><a class="footer-social__link" href="https://linkedin.com"><i class='footer__socails bx bxl-linkedin-square'></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
